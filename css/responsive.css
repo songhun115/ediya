@@ -1,109 +1,6 @@
-@charset "utf-8";
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&subset=korean");
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,900");
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
-/*reset*/
-body {
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-p {
-  margin: 0;
-  padding: 0;
-}
-header,
-main,
-footer,
-article,
-section,
-aside,
-nav {
-  display: block;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-a img {
-  border: none;
-}
-li {
-  list-style: none;
-}
-table {
-  border-collapse: collapse;
-}
-address,
-em {
-  font-style: normal;
-}
 
-/*common*/
-body {
-  font: 13px "Noto Sans KR", "나눔고딕", "돋움", Dotum, Helvetica,
-    "Apple SD Gothic Neo", "sans-serif";
-  color: #222;
-  background: #fff;
-}
-#skip-nav {
-  position: fixed;
-  top: -40px;
-  left: 0;
-  width: 100%;
-  line-height: 40px;
-  text-align: center;
-  font-size: 17px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 10000;
-  transition: 0.3s;
-}
-#skip-nav:focus {
-  top: 0;
-}
-#wrapper {
-  width: 100%;
-  min-width: 337px;
-  overflow: hidden;
-}
-#layer-mask {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 11;
-}
-br.only-m {
-  content: "";
-}
-br.only-m:after {
-  content: "\00a0";
-}
-.pc {
-  display: none;
-}
-.large {
-  display: block;
-}
-.small {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   br.only-m {
     content: initial;
   }
@@ -117,7 +14,7 @@ br.only-m:after {
     content: "\00a0";
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   .large {
     display: none;
   }
@@ -532,7 +429,7 @@ br.only-m:after {
   transform: translate(0, -50%);
 }
 
-@media screen and (max-width: 980px) {
+@media (max-width: 980px) {
   #main-visual {
     height: auto;
   }
@@ -597,7 +494,7 @@ br.only-m:after {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #beanist {
     background: #052e6b url(../images/main_block01_bg_m.gif) no-repeat bottom
       center;
@@ -697,7 +594,7 @@ br.only-m:after {
   color: #fff;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #main-menu {
     background: url(../images/block02_bg_m.jpg) no-repeat top center / cover;
   }
@@ -822,10 +719,8 @@ br.only-m:after {
     transform: translateY(0);
   }
 }
-@media (max-width: @iphone-screen) {
-  background-attachment: scroll;
-}
-@media screen and (max-width: 960px) {
+
+@media  (max-width: 960px) {
   #culturelab div.culturelab-box {
     height: 562px;
   }
@@ -966,7 +861,7 @@ br.only-m:after {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #coffeelab h2 {
     padding-top: 60px;
     line-height: 35px;
@@ -982,7 +877,7 @@ br.only-m:after {
     padding: 40px 0 150px 0;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   #coffeelab div.img {
     padding-bottom: 80%;
   }
@@ -1045,7 +940,7 @@ br.only-m:after {
   font-size: 17px;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #board div.board-box {
     height: 675px;
   }
@@ -1119,7 +1014,7 @@ br.only-m:after {
   right: 3%;
 }
 
-@media screen and (max-width: 960px) {
+@media  (max-width: 960px) {
   #board div.findstore {
     width: 100%;
     height: 177px;
@@ -1224,14 +1119,14 @@ br.only-m:after {
   color: #a4a4a5;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #board dl.ediya-news {
     width: 100%;
     height: 205px;
     padding: 30px 50px 0 50px;
   }
 }
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   #board dl.ediya-news dd + dt:before {
     margin: 0 10px;
   }
@@ -1263,7 +1158,7 @@ br.only-m:after {
   right: 15px;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #board div.brochure {
     width: 100%;
     padding: 30px 0 0 50px;
@@ -1275,7 +1170,7 @@ br.only-m:after {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #board div.brochure a img {
     width: 130px;
     height: auto;
@@ -1334,7 +1229,7 @@ br.only-m:after {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #main-sns h2 {
     padding-top: 60px;
     font-size: 22px;
@@ -1347,7 +1242,7 @@ br.only-m:after {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 640px) {
+@media  (max-width: 640px) {
   #main-sns div.instagram ul li {
     width: 33.333%;
   }
@@ -1465,7 +1360,7 @@ br.only-m:after {
   right: 0;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #recommend div.recommend-box {
     height: auto;
     margin: 0 auto 25px;
@@ -1499,7 +1394,7 @@ br.only-m:after {
     text-overflow: ellipsis;
   }
 }
-@media screen and (max-width: 790px) {
+@media (max-width: 790px) {
   #recommend div.recommend-box {
     height: auto;
   }
@@ -1594,7 +1489,7 @@ br.only-m:after {
   font-size: 16px;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #product ul.category {
     height: 150px;
     padding: 30px 8%;
@@ -1620,7 +1515,7 @@ br.only-m:after {
     text-overflow: ellipsis;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   #product ul.category {
     height: 180px;
   }
@@ -1671,12 +1566,12 @@ br.only-m:after {
   background: #84847c;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   .coffee_lab #sub-visual div.info div.info-visual {
     height: 220px;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   .coffee_lab #sub-visual div.info div.info-visual {
     height: 160px;
   }
@@ -1858,7 +1753,7 @@ br.only-m:after {
   background: url(../images/lab_block01_icon11.png) no-repeat top left;
 }
 
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   #lab-map h2 {
     padding-top: 60px;
     font-size: 25px;
@@ -1963,7 +1858,7 @@ br.only-m:after {
   background: #fff;
 }
 
-@media screen and (max-width: 640px) {
+@media  (max-width: 640px) {
   #lab-coffee h2 {
     padding-top: 60px;
     font-size: 25px;
@@ -2103,7 +1998,7 @@ br.only-m:after {
   height: 100%;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
   #lab-special h2 {
     padding-top: 70px;
   }
@@ -2188,7 +2083,7 @@ br.only-m:after {
   background: url(../images/lab_block04_icon03.png) no-repeat center;
 }
 
-@media screen and (max-width: 960px) {
+@media  (max-width: 960px) {
   #lab-bakely div.lab-bakely-box {
     height: auto;
   }
@@ -2208,7 +2103,7 @@ br.only-m:after {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   #lab-bakely h2 {
     font-size: 25px;
   }
@@ -2312,7 +2207,7 @@ br.only-m:after {
   transform: translate(0, -50%);
 }
 
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   #lab-md h2 {
     padding-top: 60px;
     font-size: 25px;
